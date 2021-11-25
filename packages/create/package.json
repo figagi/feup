@@ -1,0 +1,42 @@
+{
+  "name": "feup-create",
+  "version": "0.1.2",
+  "description": "create react app",
+  "keywords": [
+    "create",
+    "feup",
+    "feup-create"
+  ],
+  "author": "feupjs <feupjs@163.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "create.js",
+  "directories": {
+    "link:npm": "npm link",
+    "test": "__tests__"
+  },
+  "files": [
+    "create.js",
+    "InitProject.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feupjs/feup.git",
+    "directory": "packages/create"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "maintainers": [
+    "feupjs"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "commander": "^8.1.0",
+    "fs-extra": "^10.0.0",
+    "got": "11.8.2",
+    "inquirer": "^8.1.2",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "gitHead": "9480b87a4d696746800dba9c8e56ef14401e4322"
+}

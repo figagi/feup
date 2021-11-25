@@ -1,0 +1,47 @@
+{
+  "name": "feup",
+  "version": "0.1.12",
+  "testName": "",
+  "description": "all cli commands",
+  "keywords": [
+    "feup",
+    "feup-cli",
+    "cli"
+  ],
+  "author": "feupjs <feupjs@163.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "bin/feup.js",
+  "maintainers": [
+    "feupjs"
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feupjs/feup.git",
+    "directory": "packages/cli"
+  },
+  "bin": {
+    "feup": "./bin/feup.js"
+  },
+  "scripts": {
+    "link:npm": "npm link",
+    "feup": "node ./bin/feup.js",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "commander": "^8.0.0",
+    "feup-create": "^0.1.2",
+    "feup-run": "^0.1.6",
+    "minimist": "^1.2.5"
+  },
+  "gitHead": "9480b87a4d696746800dba9c8e56ef14401e4322"
+}

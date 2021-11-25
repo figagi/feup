@@ -1,0 +1,28 @@
+{
+  "name": "feup",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "link:npm": "lerna link && lerna run --stream --concurrency 1 link:npm",
+    "clean": "lerna clean --yes",
+    "sh:beta": "cross-env PUB_TYPE=beta node ./scripts",
+    "sh:prod": "cross-env PUB_TYPE=prod node ./scripts",
+    "pub": "npm run pub:prod",
+    "pub:beta": "npm run sh:beta && lerna publish",
+    "pub:prod": "npm run sh:prod && lerna publish",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "feup-lint": "^0.1.0",
+    "chalk": "^4.1.1",
+    "commander": "^8.1.0",
+    "inquirer": "^8.1.2",
+    "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
