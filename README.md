@@ -14,10 +14,10 @@
 # 请根据自己的情况选择
 
 # npm 全局
-npm install -g feup-cli
+npm install -g feup
 
 # yarn 全局
-yarn global add feup-cli
+yarn global add feup
 ```
 
 ## Start
