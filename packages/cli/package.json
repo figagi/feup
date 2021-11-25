@@ -1,6 +1,6 @@
 {
   "name": "feup",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "testName": "",
   "description": "all cli commands",
   "keywords": [
@@ -39,8 +39,8 @@
   "dependencies": {
     "chalk": "^4.1.1",
     "commander": "^8.0.0",
-    "feup-create": "^0.1.2",
-    "feup-run": "^0.1.6",
+    "feup-create": "^0.1.3",
+    "feup-run": "^0.1.7",
     "minimist": "^1.2.5"
   },
   "gitHead": "9480b87a4d696746800dba9c8e56ef14401e4322"
