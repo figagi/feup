@@ -2,9 +2,56 @@
 const program = require('commander');
 const chalk = require('chalk');
 const minimist = require('minimist');
+const figlet = require('figlet');
 const { version, testName } = require('../package.json');
+// const stripComments = require('strip-json-comments');
+// const pkg = JSON.parse(
+//   stripComments(fs.readFileSync(path.resolve(__dirname, '../../package.json'), 'utf8').replace(/^\ufeff/u, '')),
+// );
 
 const runPackName = `feup-run${testName || ''}`;
+
+function printBanner(logger) {
+  figlet.text(
+    'FEUP',
+    {
+      font: '3D-ASCII',
+      horizontalLayout: 'default',
+      verticalLayout: 'default',
+    },
+    (err, data) => {
+      if (err) {
+        // logger.error(err);
+        // process.exit(2);
+      }
+      console.info(`\n${data}`);
+      console.info(`FEUP，current version: v1, homepage: https://github.com/feupjs/feup`);
+      console.info(
+        ' (c) powered by Tencent, aims to improve front end workflow.                                       ',
+      );
+      console.info(' Run feup --help to see usage.                                     ');
+    },
+  );
+}
+
+program
+  .command('stark')
+  .description('create a new project powered by feup')
+  .option('-f, --force', 'Overwrite target directory if it exists')
+  .action((name, options) => {
+    if (minimist(process.argv.slice(3))._.length > 1) {
+      console.info(
+        chalk.yellow(
+          "\n Info: You provided more than one argument. The first one will be used as the app's name, the rest are ignored.",
+        ),
+      );
+    }
+    // --git makes commander to default git to true
+    if (process.argv.includes('-g') || process.argv.includes('--git')) {
+      options.forceGit = true;
+    }
+    require('feup-create')(name, options);
+  });
 
 program
   .command('create <app-name>')
@@ -43,7 +90,7 @@ program.on('command:*', ([cmd]) => {
   program.outputHelp();
   console.info(`  ` + chalk.red(`Unknown command ${chalk.yellow(cmd)}.`));
   console.info();
-  suggestCommands(cmd);
+  // suggestCommands(cmd);
   process.exitCode = 1;
 });
 
@@ -55,4 +102,9 @@ program.on('--help', () => {
   console.info();
 });
 
-program.parse(process.argv);
+
+if(minimist(process.argv.slice(2))._.length == 0){
+  printBanner()
+}else{
+  program.parse(process.argv);
+}
