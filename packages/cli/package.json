@@ -2,13 +2,16 @@
   "name": "feup",
   "version": "0.1.16",
   "testName": "",
-  "description": "all cli commands",
+  "description": "Command line interface for rapid React.js development",
   "keywords": [
     "feup",
     "feup-cli",
     "cli"
   ],
   "author": "feupjs <feupjs@163.com>",
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "",
   "license": "MIT",
   "main": "bin/feup.js",
