@@ -41,6 +41,7 @@
     "commander": "^8.0.0",
     "feup-create": "^0.1.5",
     "feup-run": "^0.1.9",
+    "figlet": "^1.5.2",
     "minimist": "^1.2.5"
   },
   "gitHead": "9480b87a4d696746800dba9c8e56ef14401e4322"
