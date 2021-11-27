@@ -20,6 +20,11 @@ npm install -g feup
 yarn global add feup
 ```
 
+> try
+```
+feup
+```
+
 ## Start
 
 - `feup` `<command>` `<options>`
