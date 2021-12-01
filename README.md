@@ -1,4 +1,18 @@
-# feup-cli
+# 愿景
+解决前端所有业务场景，及快速搭建、监控。
+
+当公司选型react为生态的时候，如果你不想使用umi的时候，可以试用一下 FEUP
+
+## 特性
+
+- 钉钉通知 buildTime
+- configureWebpack
+- pxtorem 参数整合
+- 脚手架生态「C端（spa）、服务端渲染框架（nextjs-up）、后台系统admin（已经集成基础布局，拿来即用）、小程序」
+- 项目创建成功后初始化依赖
+- 可配置化
+- Server
+
 
 ## 详细文档
 
@@ -57,17 +71,7 @@ yarn global add feup
 - 生成注入组件
 - 逐步增加配置项
 
-## Done
 
-- 钉钉通知 buildTime
-- configureWebpack
-- 通过塞伯坦来动态修改脚手架的仓库地址和分支
-- pxtorem 参数整合
-- 初始化后 git 仓库地址修改
-- 通过命令行初始化模版「spa、ssr、miniProgram、kms」
-- 项目创建成功后初始化依赖
-- 可配置化
-- Server
 
 ## LICENSE
 
