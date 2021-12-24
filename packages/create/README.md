@@ -1,5 +1,6 @@
 # `feup-create`
 
+> 查看详情： https://www.feup.cn
 > 服务于 `feup-cli`, 提供创建项目的功能
 
 ## Usage
