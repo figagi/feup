@@ -1,6 +1,6 @@
 {
   "name": "feup",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "testName": "",
   "description": "Command line interface for rapid React.js development",
   "keywords": [
@@ -43,7 +43,7 @@
     "chalk": "^4.1.1",
     "commander": "^8.0.0",
     "feup-create": "^0.1.5",
-    "feup-run": "0.1.10",
+    "feup-run": "^0.1.11",
     "figlet": "^1.5.2",
     "minimist": "^1.2.5"
   },
