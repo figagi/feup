@@ -43,7 +43,7 @@
     "chalk": "^4.1.1",
     "commander": "^8.0.0",
     "feup-create": "^0.1.5",
-    "feup-run": "^0.1.11",
+    "feup-run": "0.1.11",
     "figlet": "^1.5.2",
     "minimist": "^1.2.5"
   },
