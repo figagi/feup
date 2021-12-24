@@ -70,6 +70,7 @@ yarn global add feup
 - 考虑把 public/index.html 收入进去
 - 生成注入组件
 - 逐步增加配置项
+- 发布到cdn
 
 
 
