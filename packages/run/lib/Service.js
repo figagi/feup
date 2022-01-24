@@ -20,7 +20,7 @@ class Service {
     const config = this.loadConfig();
     config.name = config.name || appPackageJson.name;
     process.env.FIG_CONFIG = JSON.stringify(config);
-    process.env.FIG_ENV = this.env;
+    process.env.FEUP_ENV = this.env;
     process.env.FIG_MODE = this.mode;
     this.start(config);
   }

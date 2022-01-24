@@ -34,7 +34,7 @@ const appPackageJson = require(paths.appPackageJson);
 
 const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== 'false';
 
-const isBuildProd = process.env.FIG_ENV === 'prod';
+const isBuildProd = process.env.FEUP_ENV === 'prod';
 
 const imageInlineSizeLimit = parseInt(process.env.IMAGE_INLINE_SIZE_LIMIT || '10000', 10);
 
@@ -542,7 +542,7 @@ function webpackConfig(webpackEnv) {
         inject: true,
         template: paths.appHtml,
         CONFIG: {
-          FIG_ENV: process.env.FIG_ENV,
+          FEUP_ENV: process.env.FEUP_ENV,
         },
         ...(isEnvProduction
           ? {

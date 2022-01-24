@@ -13,7 +13,7 @@ process.env.BABEL_ENV = 'production';
 process.env.NODE_ENV = 'production';
 const other = JSON.parse(process.env.other || '{}');
 // env前置
-let isFigEnv = ['prod', 'pre', 'test', 'dev'].includes(process.env.FIG_ENV);
+let isFigEnv = ['prod', 'pre', 'test', 'dev'].includes(process.env.FEUP_ENV);
 if (!isFigEnv) {
   console.log('-e params not supported');
   process.exit(1);
