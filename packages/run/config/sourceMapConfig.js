@@ -1,4 +1,4 @@
-const ENV = process.env.FIG_ENV;
+const ENV = process.env.FEUP_ENV;
 
 function sourceMapConfig(isEnvProduction, { sourceMap = false }) {
   const result = {
