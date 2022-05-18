@@ -13,6 +13,7 @@
 - 可配置化
 - Server
 
+<img width="809" alt="image" src="https://user-images.githubusercontent.com/9738969/169004706-8d832337-4326-48de-8be2-529d6a276a48.png">
 
 ## 详细文档
 
